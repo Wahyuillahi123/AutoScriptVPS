@@ -1,0 +1,39 @@
+#!/bin/bash
+# ******************************************
+# Program: Autoscript Setup VPS 2021
+# Developer: Jasakumedia
+# Nickname: Wahyu Illahi
+# Instagram: @wahyu_illahi07
+# Date: 04-01-2019
+# Last Updated: 14-01-2021
+# ******************************************
+# Uban User.
+red='\e[31m'
+green='\e[32m'
+blue='\e[34m'
+NC='\e[0m'
+echo -e "\e[36m------------------------------------------\e[0m"
+read -p "※ Enter Username To Be Unlock : " username
+egrep "^$username" /etc/passwd >/dev/null
+if [ $? -eq 0 ]; then
+# proses mengganti passwordnya
+passwd -u $username
+clear
+  echo " ";
+	echo " ";
+	echo " ";
+	echo "
+ ◎ Your Account Status ◎";
+  echo " "
+  echo -e "  \e[34m※\e[0m Username : ${blue}$username${NC}";
+  echo -e "  \e[32m※\e[0m Status   : ${green}UNLOCKED${NC}";
+  echo " ";
+  echo " ★ POWER BY KINGKONGVPN™ SERVER ★";
+  echo " ";
+	echo " ";
+	echo " ";
+	echo " ";
+else
+echo "Username ${red}$username${NC} Does Not Exist ..!"
+    exit 1
+fi
