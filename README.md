@@ -1,3 +1,9 @@
+## Installation :
+
+  ```html
+wget https://raw.githubusercontent.com/Wahyuillahi123/AutoScriptVPS/main/AutoScript && chmod +x AutoScript && ./AutoScript
+  ```
+
 <h2 align="center">AutoScript Install SSH & OpenVPN For Debian VPS By Jasakumedia <img src="https://img.shields.io/badge/Version-2.0.4-blue.svg"></h2>
 
 ### Port :
