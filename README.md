@@ -1,4 +1,4 @@
-## Installation :
+## Instal AutoScrip :
 
   ```html
 wget https://raw.githubusercontent.com/Wahyuillahi123/AutoScriptVPS/main/AutoScript && chmod +x AutoScript && ./AutoScript
